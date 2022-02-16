@@ -71,3 +71,5 @@ company3 <- dplyr::filter(choco, Company %in% c("Soma", "Bonnat", "Fresco"))
 ggplot(data = company3, mapping = aes(x = Company, y = Rating)) + 
   geom_boxplot()
 ```
+
+All of these companies have a max rating of 4, but Bonnat has an outlier with it's lowest rating being 1.5. All three of these companies have the same median at a value of 3.5. Bonnat has the largest interquartile range, Soma has the smallest inter quartile range, and Fresco has one in the middle of those two. Soma has two outliers in the lower direction, Fresco has none, and Bonnat as has one in the lower direction.
